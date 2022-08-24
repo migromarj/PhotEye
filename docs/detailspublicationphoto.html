@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Detalle de foto</title>
+    <link rel="icon" href="images/favicon-16x16.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/docs/js/utils/include.js"> </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+
+    <script src="/js/detailspublicationphoto.js" type="module"></script>        <!-- html renderer-->
+
+    <script src="/js/insertcomments.js" type="module"></script>                 <!-- Photo comments -->
+    <script src="/js/doAComment.js" type="module"></script>
+    <script src="/js/insertCategoriesInPhoto.js" type="module"></script>        <!-- Photo categories -->
+
+    <script src="js/libs/axios.min.js"></script>
+
+    <script src="/js/header.js" type="module"></script>
+    
+</head>
+
+
+<body>
+
+    <div id="page-header"> </div>
+
+    <div id="errors"> </div>
+
+    <div class="container">
+
+        <div id="id-photo-details-publication"></div>
+
+        
+
+        <div class="row text-center">
+            <div class="col-md">
+                <button type="button" class="btn btn-info" data-toggle="modal"
+                    data-target="#id-modal-ver-comentarios">Ver comentarios</button>
+                <button type="button" class="btn btn-info" data-toggle="modal"
+                    data-target="#id-modal-ver-categorias">Ver categorías</button>
+            </div>        
+        </div>
+
+        <br>
+
+        <div class="row text-center align-items-center">
+            <div class=" col-md-6" id="id-publication">
+
+                
+
+            </div>
+            <div class=" col-md-4 ">
+
+                <br>
+                <div class="contenedor-modal" id="id-url-photo-details-publication">
+                    
+                    
+                </div>
+                <br>
+                <div class="contenedor-modal">
+                    <button type="button" class="btn btn-success" data-toggle="modal"
+                        data-target="#id-modal-hacer-comentario2">
+                        Comentar
+                    </button>
+                </div>
+                <br>
+                <div class="contenedor-modal">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#id-modal-editar-foto">
+                        Editar foto
+                    </button>
+                </div>
+                <br>
+                <div class="contenedor-modal">
+                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                        data-target="#id-modal-eliminar-foto">
+                        Eliminar foto
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <div class="row text-center">
+            <div class="col-md">
+                <a href="publications.html" class="btn btn-primary"> Volver atrás</a>
+            </div>
+        </div>
+        <br>
+           
+    </div>
+
+    <!--Modal ver comentarios-->
+    <div class="modal fade" id="id-modal-ver-comentarios" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="id-7">Comentarios</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="id-photo-comments">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Modal ver categorías-->
+    <div class="modal fade" id="id-modal-ver-categorias" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="id-7">Categorías</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="id-photo-categories">
+
+                </div>
+                <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                        data-target="#id-modal-eliminar-categoria">
+                        Eliminar categoría
+                    </button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#id-modal-añadir-categoria">
+                        Añadir categoría
+                    </button>
+                    <button type="button" class="btn btn-success" id="id-btn-add-category" data-toggle="modal"
+                        data-target="#id-modal-categoria">Crear categoría</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Modal comentar-->
+    <div class="modal fade" id="id-modal-hacer-comentario2" tabindex="-1" role="dialog"
+        aria-labelledby="id-modal-hacer-comentario" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="id-modal-hacer-comentario">Comentario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="id-form-comment-photo">
+                    <div class="modal-body form-group">
+                        <textarea class="form-control" rows="5" id="comment" name="txt"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Enviar comentario</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal añadir categoría-->
+    <div class="modal fade" id="id-modal-añadir-categoria" tabindex="-1" role="dialog"
+        aria-labelledby="id-modal-title-añadir-categoría" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="id-modal-title-añadir-categoría">Añadir categoría</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="id-form-add-category">
+                    
+                        
+
+                    <div class="modal-body">
+                        
+                        <br>
+                        <br>
+
+                        <div id="id-add-select-categories"></div>
+
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Añadir categoría</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal eliminar foto-->
+    <div class="modal fade" id="id-modal-eliminar-foto" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="id-modal-title-eliminar-foto">Eliminar foto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body form-group">
+                    ¿Desea eliminar su fotografía?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button class="btn btn-primary" id="id-button-delete">Sí</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal editar foto-->
+    <div class="modal fade" id="id-modal-editar-foto" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="id-modal-title-editar-foto">Editar foto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="id-form-edit-photo"> 
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="input-url">URL</label>
+                            <input type="text" class="form-control" id="input-url" aria-describedby="url" name="url" required>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="input-title">Título</label>
+                            <input type="text" class="form-control" id="input-title" aria-describedby="titulo" name="title" required>
+
+                        </div>
+                        <div class=" form-group">
+                            <label for="input-description">Descripción</label>
+                            <textarea class="form-control" rows="5" id="input-description" name="description" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-visibility">Visibilidad</label>
+                            <select class="form-control" id="input-visibility" name="visibility">
+                                <option value="Pública" selected>Pública</option>
+                                <option value="Privada">Privada</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary" id="id-botton-edit">Editar foto</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal eliminar categoría-->
+    <div class="modal fade" id="id-modal-eliminar-categoria" tabindex="-1" role="dialog"
+        aria-labelledby="id-modal-title-eliminar-categoría" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="id-modal-title-eliminar-categoría">Eliminar categoría</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="id-form-delete-category">
+                   
+                    
+
+                    <div class="modal-body">
+                        
+                        <br>
+                        <br>
+
+                        <div id="id-delete-select-categories"></div>
+
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-danger">Eliminar categoría</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal crear categoría-->
+    <div class="modal fade" id="id-modal-categoria" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="id-modal-title-categoria">Crear categoría</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="id-form-create-category">
+                    <div class="modal-body form-group">
+                        <textarea class="form-control" rows="5" id="comment" name="NAME"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-success">Crear categoría</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-footer"> </div>
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+
+    <script>
+        include("footer.html", "#page-footer");
+    </script>
+
+</body>
+
+</html>

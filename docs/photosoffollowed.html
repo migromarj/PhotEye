@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Fotos de seguidos</title>
+    <link rel="icon" href="images/favicon-16x16.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="../docs/js/utils/include.js"> </script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+
+    <script src="/js/photosOfFollowed.js" type="module"></script>       <!-- html renderer-->
+
+    <script src= "js/libs/axios.min.js"></script>
+
+    <script src="/js/header.js" type="module"></script>
+
+</head>
+
+
+<body>
+
+    <div id="page-header"></div>
+
+    <div id="errors"> </div>
+
+    <div class="container">
+
+        <div class="row text-center class-title-index">
+            <div class=" col-md ">
+                <h2>
+                    Fotos seguidos
+                </h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="page-footer"></div>
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+
+    <script>
+        include("footer.html", "#page-footer");
+    </script>
+
+</body>
+
+</html>

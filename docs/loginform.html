@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Inicio de sesión</title>
+    <link rel="icon" href="images/favicon-16x16.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="../docs/js/utils/include.js"> </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+
+    <script src="js/login.js" type="module"></script>
+
+    <script src="js/libs/axios.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div id="errors"></div>
+
+    <div class="container ">
+
+        <div class="row">
+            <div class="col-md my-auto">
+                <div class="row class-icon-f">
+                    <h1 class="class-icon-f"><img src="images/23000090.png" width="40"
+                            alt="Ojo de color doreado que representa el logotipo de la página web">&nbsp;&nbsp;PhotEye
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="class-contenedorl mx-auto">
+            <div class="col-md mx-auto">
+                <div class="row title">
+                    <div class="col-md">
+                        <p>Iniciar sesión</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md text-center">
+                        <h5 >¿Eres un nuevo usuario? <a href='registerform.html'>Crear cuenta</a></h5>
+                    </div>
+                </div>
+                <br>
+
+                <div class="form">
+
+                    <form id="id-login-form">
+                        <div class="row ">
+
+                            <div class="col-md">
+                                <div class="form-group class-text-forms">
+                                    <label for="id-emaill"> Email: </label>
+                                    <input type="email" class="form-control" id="id-emaill" name="email"
+                                        placeholder="Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md">
+                                <div class="form-group class-text-forms">
+                                    <label for="id-contraseñal">Contraseña: </label>
+                                    <input type="password" class="form-control" id="id-contraseñal" name="password"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md text-center class-botonr">
+                                
+                                <a href="index.html" role="button" class="btn btn-secondary"> Volver a la página de
+                                    inicio
+                                </a>
+                                <button type="submit" class="btn btn-primary"> Iniciar sesión </button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

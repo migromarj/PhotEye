@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Subir foto</title>
+    <link rel="icon" href="images/favicon-16x16.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="../docs/js/utils/include.js"> </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+
+    <script src="/js/upload_photo.js" type="module"></script>
+    
+    <script src="/js/libs/axios.min.js"></script>
+
+    <script src="/js/header.js" type="module"></script>
+
+</head>
+
+
+<body>
+
+    <div id="page-header"></div>
+
+    <div id="errors"> </div>
+
+    <div class="container class-contenedorsb2">
+
+        <div class="title">Publicar foto</div>
+        <br> 
+
+
+
+        <div class="form">
+
+            <form id="id-form-upload-photo">
+
+                <div class="row ">
+                    <div class="col-md">
+                        <div class="form-group class-text-forms">
+                            <label for="id-urlsf"> URL de imagen: </label>
+                            <input type="url" class="form-control" id="id-urlsf" name="url" placeholder="URL de imagen"
+                                required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class=" col-md ">
+                        <div class=" form-group class-text-forms">
+                            <label for="id-titulosb"> Título: </label>
+                            <input type="text" class="form-control" id="id-titulosb" name="title" placeholder="Título"
+                                required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class=" col-md ">
+                        <div class=" form-group class-text-forms">
+                            <label for="id-descripcionsb"> Descripción: </label>
+                            <textarea id="id-descripcionsb" class="form-control" rows="4" name="description"
+                                placeholder="Descripción" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row ">
+                    <div class=" col-md ">
+                        <select class="form-control" name="visibility">
+                            <option disabled selected>Visibilidad</option>
+                            <option value="Pública">Pública</option>
+                            <option value="Privada">Privada</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="col-md text-center class-botonr">
+                        <a href="index.html" class="btn btn-secondary" role="button"> Volver atrás </a>
+                        <button type="submit" class="btn btn-primary"> Publicar foto </button>
+                    </div>
+                </div>
+                <br>
+        </div>
+
+    </div>
+
+    </form>
+
+    <br>
+    <br>
+
+    <div id="page-footer"></div>
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+
+    <script>
+        include("footer.html", "#page-footer");
+    </script>
+
+</body>
+
+</html>

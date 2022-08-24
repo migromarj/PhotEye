@@ -1,0 +1,752 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/fondo-t-b.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/*Header*/
+
+div.title-block {
+    text-align: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #EEEEEE;
+}
+
+div ul li a {
+    line-height: 3em;
+}
+
+a.btn.btn-outline-primary.text-primary {
+    margin: 4px;
+}
+
+div.title-block h1 {
+    text-align: center;
+    font-family: serif;
+    color: gold;
+    width: 100%;
+}
+
+.class-f {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler {
+    background: gray;
+}
+
+/*Header bootstrap*/
+
+@media (max-width: 991px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+a.dropdown-item.text-white:hover {
+    background-color: gray;
+    text-decoration: white;
+}
+
+.class-perfil2 {
+    width: 4em;
+    margin-right: 4em;
+    border-radius: 1000px;
+}
+
+#menu1 {
+    width: 5.5em;
+}
+
+a.dropdown-item.text-white:hover {
+    background-color: gray;
+    text-decoration: white;
+}
+
+p.text-center.align.align-items-center.text-white {
+    font-weight: bold;
+}
+
+hr.class-header2 {
+    background-color: white;
+}
+
+/*Footer*/
+
+footer {
+    padding-top: 1em;
+}
+
+.footer {
+    bottom: 0px;
+}
+
+/*Contact*/
+
+.class-title-c h2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.class-information-c h3 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.class-information-c p {
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.class-information-c {
+    margin-top: 8em;
+}
+
+div.container.class-contenedorcc {
+    background-image: url(../images/fondo-calido.jpg);
+    width: auto;
+    max-width: 1000px;
+    padding: 30px;
+    padding-top: 20px;
+    margin-top: 1px;
+    border-radius: 15px;
+    margin-bottom: 5em;
+}
+
+/*Map (Contact)*/
+
+.class-mapa {
+    position: relative;
+    overflow: hidden;
+}
+
+/*Comments*/
+
+.class-title-comments h2 {
+    text-align: center;
+    margin: 1em;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+/*Account*/
+
+.class-title-cuenta h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.class-nombre-cuenta {
+    font-size: 2em;
+    color: white;
+}
+
+.class-datos-cuenta {
+    margin-top: 2.5em;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+/*Profile*/
+
+.class-title-perfil h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.class-todo-perfil {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.class-imagen-perfil {
+    width: 6em;
+}
+
+/*Edit profile*/
+
+.class-todo-editar-perfil {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+/*Photo details*/
+
+.class-td-detalle {
+    color: #ffffff;
+}
+
+.class-td-detalle h3 {
+    font-weight: bold;
+}
+
+.class-texto-label {
+    color: #ffffff;
+}
+
+/*Trends*/
+
+.class-title-index-t h2 {
+    clear: right;
+    text-align: center;
+    margin: 1em;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+
+div.class-tendencias-container a {
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    background-color: #18b5f3;
+    border: 1px solid black;
+    font-family: monospace;
+    text-decoration: none;
+    /*max-width: 150px;*/
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+div.class-tendencias-container {
+    text-align: center;
+}
+
+/*Trending categories*/
+
+.class-photo-i2 {
+    margin: 1em;
+    max-height: 25em;
+    border: 2px solid orange;
+    background-color: gray;
+    /*max-width: 314px;*/
+    height: auto;
+}
+
+.class-img-i2 {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+.class-title-cat2 h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.class-category-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/*Trending users*/
+
+.class-title-cat3 h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.class-photo-i22 {
+    margin: 1em;
+    max-height: 20em;
+    border: 2px solid orange;
+    background-color: gray;
+    max-width: 250px;
+    height: auto;
+}
+
+.class-img-i3 {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 1000px;
+}
+
+/*Trending photos*/
+
+.class-title-cat1 h2 {
+    width: 100%;
+    text-align: center;
+    margin: 1em;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.class-photo-i21 {
+    margin: 1em;
+    max-height: 20em;
+    border: 2px solid orange;
+    background-color: gray;
+    height: auto;
+    /*max-width: 304px;*/
+}
+
+.class-img-i21 {
+    max-width: 100%;
+    height: auto;
+    max-height: 209px;
+}
+
+/*Categories*/
+
+.class-photo-icat {
+    margin: 1em;
+    height: 25em;
+    border: 2px solid orange;
+    height: auto;
+    background-color: gray;
+}
+
+/*Vertical centering*/
+
+.text-categoria {
+    font-weight: bold;
+    font-size: larger;
+}
+
+/*Photos of followed and followers*/
+
+.class-img-ip {
+    width: 2em;
+}
+
+/*Forms*/
+
+div.class-contenedorl {
+    background-image: url(../images/fondo-calido.jpg);
+    width: auto;
+    max-width: 500px;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+div.class-contenedorr {
+    background-image: url(../images/fondo-calido.jpg);
+    width: auto;
+    max-width: 700px;
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.class-contenedorr h5 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 15px;
+}
+
+.class-text-forms {
+    font-weight: bold;
+}
+
+/*Upload photo*/
+
+div.container.class-contenedorsb1 {
+    background-image: url(../images/fondo-calido.jpg);
+    width: auto;
+    max-width: 700px;
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: 10em;
+    border-radius: 15px;
+    margin-bottom: 10em;
+}
+
+div.class-contenedorsb1 h5 {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    div.container.class-contenedorr {
+        margin-top: 0px;
+    }
+}
+
+div.container.class-contenedorsb2 {
+    background-image: url(../images/fondo-calido.jpg);
+    width: auto;
+    max-width: 800px;
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: 5em;
+    border-radius: 15px;
+    margin-bottom: 5em;
+}
+
+div.class-contenedorsb2 h5 {
+    text-align: center;
+}
+
+.class-img-subir {
+    border: solid 2px rgb(132, 138, 192);
+}
+
+/*Fotos seguidos*/
+
+.class-photo-if {
+    margin: 1em;
+    height: 23em;
+    border: 2px solid orange;
+    background-color: gray;
+}
+
+/*Title recent photos*/
+
+.class-title-index h2 {
+    text-align: center;
+    margin: 1em;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+/*Recent photos bootstrap*/
+
+.class-photo-i {
+    margin: 1em;
+    height: 20em;
+    border: 2px solid orange;
+    background-color: gray;
+}
+
+.card-body h5 {
+    font-weight: bold;
+    color: honeydew;
+}
+
+.card-body p {
+    color: honeydew;
+}
+
+.class-img-i {
+    max-height: 13em;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Ratings*/
+
+.class-photo-ir {
+    margin: 1em;
+    height: 23em;
+    border: 2px solid orange;
+    background-color: gray;
+}
+
+.class-img-ir {
+    max-height: 14em;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Publications*/
+
+div.class-title-index-p h2 {
+    text-align: center;
+    margin: 1em;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.class-photo-ipub {
+    margin: 1em;
+    height: auto;
+    border: 2px solid orange;
+    background-color: gray;
+}
+
+.class-img-ipub {
+    max-height: 12em;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Comments*/
+
+.class-photo-ic {
+    margin: 1em;
+    height: 25em;
+    border: 2px solid orange;
+    background-color: gray;
+}
+
+/*Modals (comments)*/
+
+.modal-header {
+    background-image: url(../images/fondo-registro5.jpg);
+    color: white;
+}
+
+/*White X (Close)*/
+
+.close {
+    color: #fff;
+    opacity: 1;
+}
+
+.close:hover {
+    color: gray;
+}
+
+/*Edit profile*/
+
+div.container.class-todo-editar-perfil {
+    background-image: url(../images/fondo-calido.jpg);
+    width: auto;
+    max-width: 1000px;
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: 1em;
+    border-radius: 15px;
+    margin-bottom: 5em;
+}
+
+div.container.class-todo-perfil {
+    background-image: url(../images/fondo-calido.jpg);
+    width: auto;
+    max-width: 1000px;
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: 1em;
+    border-radius: 15px;
+    margin-bottom: 2em;
+}
+
+div.container.class-containerc {
+    background-image: url(../images/fondo-calido.jpg);
+    width: auto;
+    max-width: 900px;
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: 1em;
+    border-radius: 15px;
+    margin-bottom: 5em;
+}
+
+.class-nombre-cuenta {
+    color: black;
+}
+
+.class-datos-cuenta {
+    color: black;
+}
+
+/*Regiter form*/
+
+div.container.class-contenedorr2 {
+    background-image: url(../images/fondo-calido.jpg);
+    width: auto;
+    max-width: 600px;
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: 5em;
+    border-radius: 15px;
+    margin-bottom: 5em;
+}
+
+div.container.class-contenedorr2 h5 {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    div.container.class-contenedorr2 {
+        margin-top: 0px;
+    }
+}
+
+/**/
+
+.lb {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+div.container.class-todo-perfil p {
+    color: black;
+}
+
+/*Profilepictures*/
+
+img.card-img-top.class-imagen-perfil {
+    border-radius: 100px;
+}
+
+/*Account profile picture*/
+
+img.card-img-top.class-img-account {
+    border-radius: 1000px;
+}
+
+/**/
+
+select#rating-input.form-control {
+    background-color: gray;
+}
+
+/*Explore 3*/
+
+.class-photo-e3 {
+    margin: 10px;
+    max-height: 22em;
+    /*28em*/
+    border: 2px solid orange;
+    background-color: gray;
+    max-width: 315.5px;
+    height: auto;
+}
+
+.class-img-ie3 {
+    margin-top: 5px;
+    /**/
+    max-width: 100%;
+    height: auto;
+    max-height: 281.5px;
+    border-radius: 1000px;
+}
+
+.class-bt-ds {
+    margin-bottom: 10px;
+}
+
+/*Name of the web in forms*/
+
+.class-icon-f {
+    margin-top: 15px;
+    text-align: center;
+    font-family: serif;
+    color: gold;
+    width: 100%;
+}
+
+/*Increase letter description*/
+
+.class-description-photo {
+    font-size: large;
+}
+
+.class-auth {
+    font-size: large;
+}
+
+/*Adjust card photos*/
+
+.class-img-i {
+    object-fit: contain;
+    /*object-fit: cover;*/
+}
+
+.class-img-ipub {
+    object-fit: contain;
+    /*object-fit: cover;*/
+}
+
+.class-img-i3 {
+    object-fit: contain;
+    /*object-fit: cover;*/
+}
+
+.class-img-i21 {
+    object-fit: contain;
+    /*object-fit: cover;*/
+}
+
+.class-photo-background {
+    background-color: black;
+}
+
+/**/
+
+@media (min-width: 1040px) {
+    .class-btn-h {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 991px) {
+    .class-btn-h {
+        font-size: 22px;
+    }
+}
+
+/*Bootstrap columns*/
+
+@media (max-width: 2000px) {
+    div.col-md-4 {
+        min-width: 314px;
+    } 
+}
+
+/*Add category*/
+
+.class-select-picker{
+    width: auto;
+    font-size:larger;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Perfil de usuario</title>
+    <link rel="icon" href="images/favicon-16x16.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="../docs/js/utils/include.js"> </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+
+    <script src="/js/userProfile.js" type="module"></script>        <!-- html renderer-->
+
+    <script src="/js/header.js" type="module"></script>
+
+    <script src= "js/libs/axios.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div id="page-header"></div>
+
+    <div id="errors"></div>
+
+    <div class="cont">
+
+        </div>
+    </div>
+
+    <div id="page-footer"></div>
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+
+    <script>
+        include("footer.html", "#page-footer");
+    </script>
+
+</body>
+
+</html>

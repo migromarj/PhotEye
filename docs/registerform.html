@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Registro</title>
+    <link rel="icon" href="images/favicon-16x16.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="../docs/js/utils/include.js"> </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+
+    <script src="js/register.js" type="module"></script>
+
+    <script src="js/libs/axios.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div id="errors"></div>
+
+    <div class="row">
+        <div class="col-md my-auto">
+            <div class="row class-icon-f">
+                <h1 class="class-icon-f"><img src="images/23000090.png" width="40"
+                        alt="Ojo de color doreado que representa el logotipo de la página web">&nbsp;&nbsp;PhotEye
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container class-contenedorr">
+
+        <div class="title">Crear una cuenta</div>
+        <div>
+            <h5>¿Ya tienes una cuenta? <a href='loginform.html'>Iniciar sesión</a></h5>
+        </div>
+        <br>
+
+        <div class="form">
+
+            <form action="#" id="id-register-form">
+                <div class="row ">
+                    <div class=" col-md ">
+                        <div class=" form-group class-text-forms">
+                            <label for="id-nombrer"> Nombre: </label>
+                            <input type="text" class="form-control" id="id-nombrer" name="name" placeholder="Nombre"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group class-text-forms">
+                            <label for="id-apellidosr"> Apellidos: </label>
+                            <input type="text" class="form-control" id="id-apellidosr" name="surnames"
+                                placeholder="Apellidos" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class=" col-md ">
+                        <div class=" form-group class-text-forms">
+                            <label for="id-usuarior"> Nombre de usuario: </label>
+                            <input type="text" class="form-control" id="id-usuarior" name="userName"
+                                placeholder="Nombre de usuario" required>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group class-text-forms">
+                            <label for="id-emailr"> Email: </label>
+                            <input type="email" class="form-control" id="id-emailr" name="email"
+                                placeholder="miguel@photeye.com" pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,4}$" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class=" col-md ">
+                        <div class=" form-group class-text-forms">
+                            <label for="id-contraseñar"> Contraseña: </label>
+                            <input type="password" class="form-control" id="id-contraseñar" name="password"
+                                placeholder="De 8 a 12 caracteres con al menos #, $, % o &, 1 mayúscula y 1 dígito"
+                                pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#$%&]).{8,12}$" required>
+                                <!--Debe contener 1 mayúscula, 1 minúcula, 1 dígito, 1 caracter especial, y debe tener de 8 a 12 caracteres-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md">
+                        <div class="form-group class-text-forms">
+                            <label for="id-contraseñar2"> Confirma contraseña: </label>
+                            <input type="password" class="form-control" id="id-contraseñar2" name="password2" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class=" col-md ">
+                        <div class=" form-group class-text-forms">
+                            <label for="id-telefono"> Teléfono: </label>
+                            <input type="tel" class="form-control" name="phoneNumber" id="id-telefono"
+                                placeholder="9 dígitos comenzando por 6, 7 o 9" pattern="[679][0-9]{8}" required>
+                        </div>
+                    </div>
+                    <div class=" col-md ">
+                        <div class=" form-group class-text-forms">
+                            <label for="id-urlperfil"> Avatar: </label>
+                            <input type="url" class="form-control" name="profilePictureURL" id="id-urlperfil"
+                                placeholder="URL foto de perfil" required>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md text-center class-botonr">
+                        <a href="index.html" role="button" class="btn btn-secondary"> Volver a la página de inicio </a>
+                        <button type="submit" class="btn btn-primary"> Registrarse </button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>PhotEye</title>
+    <link rel="icon" href="images/favicon-16x16.ico">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="/js/header.js" type="module"></script>
+
+    <script src= "js/libs/axios.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <div class="title-block bg-secondary">
+
+
+        <div class="class-f">
+
+            <h1 id="title"><img src="images/23000090.png" width="40" alt="Ojo de color dorado que representa el logotipo de la página web">&nbsp;&nbsp;PhotEye</h1>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark text-white">
+            &nbsp;&nbsp;
+            <button class="navbar-toggler btn btn-outline-warning" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+
+                <div>
+                    <form class="form-inline my-2 my-lg-0 navbar-nav" id="id-search-user2">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar usuario" id="id-name-user2">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+
+                <div class="mx-auto" id="id-navbar-uploadP">
+
+                    <a class="btn btn-outline-success text-white class-btn-h mb-1" href="uploadphoto.html" role="button">Subir foto</a>
+
+                </div>
+        
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto" id="id-navbar-buttons-G">
+                    <li class="nav-item active">
+                        <a class="btn btn-outline-primary text-white mr-1 mb-1 class-btn-h" href="index.html" role="button">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary text-white mr-1 mb-1 class-btn-h" href="categories.html" role="button">Categorías</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-outline-primary text-white mr-1 mb-1 class-btn-h" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Tendencias</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-white" href="trendsphotos.html"> Fotos en tendencia</a>
+                            <a class="dropdown-item text-white" href="trendscategories.html">Categorías en tendencia</a>
+                            <a class="dropdown-item text-white" href="trendsusers.html"> Usuarios en tendencia </a>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item dropdown my-auto">
+                        <a class="btn btn-outline-primary text-white mr-1 mb-1 class-btn-h" href="#" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Explorar</a>
+                        <div class="dropdown-menu dropdown-menu-right bg-dark">
+                            <a class="dropdown-item text-white" href="comments.html">Comentarios públicos</a>
+                            <a class="dropdown-item text-white" href="users.html"> Usuarios </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="id-navbar-buttons-L">
+                    <li class="nav-item active my-auto">
+                        <a class="btn btn-outline-primary text-white mr-1 mb-1 class-btn-h" href="index.html" role="button">Inicio</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="btn btn-outline-primary text-white mr-1 mb-1 class-btn-h" href="categories.html" role="button">Categorías</a>
+                    </li>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="btn btn-outline-primary text-white mr-1 mb-1 class-btn-h" href="#" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Tendencias</a>
+                        <div class="dropdown-menu bg-dark">
+                            <a class="dropdown-item text-white" href="trendsphotos.html"> Fotos en tendencia</a>
+                            <a class="dropdown-item text-white" href="trendscategories.html">Categorías en tendencia</a>
+                            <a class="dropdown-item text-white" href="trendsusers.html"> Usuarios en tendencia </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown my-auto">
+                        <a class="btn btn-outline-primary text-white mr-1 mb-1 class-btn-h" href="#" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Explorar</a>
+                        <div class="dropdown-menu dropdown-menu-right bg-dark">
+                            <a class="dropdown-item text-white" href="photosoffollowed.html"> Fotos de seguidos</a>
+                            <a class="dropdown-item text-white" href="comments.html">Comentarios públicos</a>
+                            <a class="dropdown-item text-white" href="users.html"> Usuarios </a>
+                        </div>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown" id="id-navbar-dropdown">
+
+
+                        <button class="btn btn-default" type="button" id="menu1" data-toggle="dropdown">
+                            <img src="" id="id-img-user-pfl"
+                                class="class-perfil2" alt="Foto de perfil de tu perfil">
+
+                        </button>
+
+                        <div class="dropdown-menu dropdown-menu-right bg-dark">
+                            <hr class="class-header2">
+                            <p class="text-center align align-items-center text-warning" id="id-navbar-user"></p>
+                            <hr class="class-header2">
+                            <a class="dropdown-item text-white" href="account.html"> Cuenta</a>
+                            <a class="dropdown-item text-white" href="profile.html"> Perfil </a>
+                            <a class="dropdown-item text-white" href="publications.html"> Publicaciones</a>
+                            <a class="dropdown-item text-white" href="ratings.html"> Valoraciones </a>
+                            <hr class="class-header2">
+                            <a class="dropdown-item text-white" id="id-navbar-logout" href="#"> Cerrar sesión</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div>
+                    <ul class="navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <a class="nav-link text-white class-auth" id="id-navbar-login" href="loginform.html">Iniciar sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white class-auth" id="id-navbar-register" href="registerform.html">Registrarse</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <br>
+
+</body>
+
+</html>

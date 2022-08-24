@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario de contacto</title>
+    <link rel="icon" href="images/favicon-16x16.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="../docs/js/utils/include.js"> </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+
+    <script src="js/contactForm.js" type="module"></script>
+
+    <script src= "js/libs/axios.min.js"></script>
+
+    <script src="/js/header.js" type="module"></script>
+
+</head>
+
+
+<body>
+
+    <div id="page-header"></div>
+
+    <div id="errors"> </div>
+
+    <div class="container class-contenedorr">
+
+        <div class="row text-center title">Formulario de contacto</div>
+        <br>
+
+        <div class="form">
+
+            <form id="id-form-contact">
+                <div class="row ">
+                    <div class=" col-md ">
+                        <div class=" form-group class-text-forms">
+                            <label for="id-nombrefc"> Nombre: </label>
+                            <input type="text" class="form-control" id="id-nombrefc" name="name" placeholder="Nombre"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group class-text-forms">
+                            <label for="id-apellidosfc"> Apellidos: </label>
+                            <input type="text" class="form-control" id="id-apellidosfc" name="surnames"
+                                placeholder="Apellidos" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md">
+                        <div class="form-group class-text-forms">
+                            <label for="id-emailr"> Email: </label>
+                            <input type="email" class="form-control" id="id-emailr" name="email" placeholder="Email"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group class-text-forms">
+                            <label for="id-telefonofc"> Teléfono: </label>
+                            <input type="tel" class="form-control" id="id-telefonofc" name="phoneNumber" placeholder="Teléfono"
+                                required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class=" col-md ">
+                        <div class=" form-group class-text-forms">
+                            <label for="id-campofc"> Comentarios: </label>
+                            <textarea id="id-campofc" class="form-control" rows="4" placeholder="Comentarios" name="comments" required></textarea>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="row">
+                    <div class="col-md text-center class-botonr">
+                        <a href="contact.html" class="btn btn-secondary" role="button"> Volver atrás </a>
+                        <button type="submit" class="btn btn-primary"> Enviar formulario </button>
+                    </div>
+                </div>
+
+            </form>
+
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div id="page-footer"></div>
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+
+    <script>
+        include("footer.html", "#page-footer");
+    </script>
+
+
+</body>
+
+</html>

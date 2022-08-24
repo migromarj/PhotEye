@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Editar perfil</title>
+    <link rel="icon" href="images/favicon-16x16.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="../docs/js/utils/include.js"> </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/jquery-3.4.1.min.js"></script>
+    <script src="/js/libs/popper.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+
+    <script src="js/editprofile.js" type="module"></script>
+
+    <script src= "js/libs/axios.min.js"></script>
+
+    <script src="/js/header.js" type="module"></script>
+
+</head>
+
+
+<body>
+
+    <div id="page-header"></div>
+
+    <div id="errors"></div>
+
+    <div class="row text-center class-title-perfil">
+        <h2>
+            Editar perfil
+        </h2>
+    </div>
+
+    <div class="container class-todo-editar-perfil">
+
+        <div class="form">
+
+            <form id="id-edit-profile-form">
+                
+                
+                <div class="row ">
+                    <div class=" col-md ">
+                        <div class=" form-group">
+                            <label for="id-nombreep"> Nombre: </label>
+                            <input type="text" class="form-control" id="id-nombreep" name="name" placeholder="Nombre"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="id-apellidosep"> Apellidos: </label>
+                            <input type="text" class="form-control" id="id-apellidosep" name="surnames"
+                                placeholder="Apellidos" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="id-emailep"> Email: </label>
+                            <input type="email" class="form-control" id="id-emailep" name="email" placeholder="Email"
+                                pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,4}$" required>
+                        </div>
+                    </div>
+                    <div class=" col-md ">
+                        <div class=" form-group">
+                            <label for="id-telep"> Teléfono: </label>
+                            <input type="tel" class="form-control" id="id-telep" name="phoneNumber"
+                            placeholder="9 dígitos comenzando por 6, 7 o 9" pattern="[679][0-9]{8}" required>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row ">
+                    <div class=" col-md ">
+                        <div class=" form-group">
+                            <label for="id-usuarioep"> Nombre de usuario: </label>
+                            <input type="text" class="form-control" id="id-usuarioep" name="userName"
+                                placeholder="Nombre de usuario" required>
+                        </div>
+                    </div>
+                    <div class=" col-md ">
+                        <div class=" form-group">
+                            <label for="id-urlperfilep"> Avatar: </label>
+                            <input type="url" class="form-control" name="profilePictureURL" id="id-urlperfilep"
+                                placeholder="URL foto de perfil" required>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md text-center">
+                        <a class="btn btn-secondary" href="profile.html" role="button">Volver atrás</a>
+                        <button type="submit" class="btn btn-primary"> Guardar cambios </button>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md">
+                        
+                        <p class="text-dark h6 font-weight-bold">*Para visualizar correctamente la información actualizada una vez editado el perfil, cierre sesión y vuélvase a autenticar</p>
+                    </div>
+                </div>
+
+            </form>
+
+
+
+        </div>
+
+    </div>
+
+    <div id="page-footer"></div>
+
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+
+    <script>
+        include("footer.html", "#page-footer");
+    </script>
+
+</body>
+
+</html>
