@@ -14,6 +14,7 @@ The following items should be installed in your system:
   * It must have a connection that has permission to perform all actions (EXECUTE, SELECT, ...), that has 'iissi_user' as user and 'iissi$user' as password, creating a database, got   the following query:
   ```
   CREATE DATABASE PhotEyeDB;
+  USE PhotEyeDB;
   ```
 * Silence 1.2.4
   * To install it, once you have python, run the following command on the command line:
