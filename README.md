@@ -9,7 +9,12 @@ The following items should be installed in your system:
 
 * Python 3.10 or newer
 * MariaDB
-* HeidiSQL with a connection that has permission to perform all actions (EXECUTE, SELECT, ...), that has 'iissi_user' as user and 'iissi$user' as password.
+* HeidiSQL 
+
+  * It must have a connection that has permission to perform all actions (EXECUTE, SELECT, ...), that has 'iissi_user' as user and 'iissi$user' as password, creating a database, got   the following query:
+  ```
+  CREATE DATABASE photeye;
+  ```
 * Silence 1.2.4
   * To install it, once you have python, run the following command on the command line:
   ```
