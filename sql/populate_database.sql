@@ -35,7 +35,7 @@ INSERT INTO Users (NAME, surnames, phoneNumber, email, userName, password, profi
 	-- 7
 	
 	('Manuela','Gonzalez Parras', 624851496, 'manuelagonzalez@gmail.com','mangonpar','ManuelaGon14','https://i.pinimg.com/236x/9a/d5/13/9ad5135b8df800a80f61a92a5afe158f.jpg'),
-	('Antonio','López Torralba',672359846, 'antoniolopez@gmail.com','antloptor','Antonio_14','https://w7.pngwing.com/pngs/130/766/png-transparent-techture-job-user-profile-linkedin-skill-akshay-kumar-miscellaneous-architect-linkedin.png'),
+	('Antonio','López Torralba',672359846, 'antoniolopez@gmail.com','antloptor','Antonio_14','https://pazedinheiro.com.br/wp-content/uploads/2021/04/ped-raphael-palone.png'),
 	
 	-- 9
 	
