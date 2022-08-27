@@ -1,5 +1,7 @@
 # PhotEye
 
+#### Responsive photography website developed with html, css and javascript.
+
 ## Running PhotEye locally
 
 ### Prerequisites
